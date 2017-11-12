@@ -60,6 +60,7 @@ p {
 
 #main-nav ul {
     display: none;
+    float: right;
 }
 
 #burger-menu-container  {
@@ -150,7 +151,7 @@ p {
     background-size: 120%;
 }
 
-/*#image-europe {
+#image-europe {
     background-image: url('../img/europe.jpeg');
 }
 
@@ -168,7 +169,7 @@ p {
 
 #image-oceania {
     background-image: url('../img/australia.jpeg');
-}*/
+}
 
 /* footer styling */
 
@@ -205,6 +206,15 @@ footer p {
   width: 200px;
 }
 
+.blurb {
+  width: 50%;
+  float: left;
+}
+
+.quote {
+  clear: left;
+}
+
 .quote-overlay {
   padding: 100px 90px;
 }
@@ -238,6 +248,15 @@ footer {
 /* styling for desktop */
 
 @media screen and (min-width: 1100px) {
+
+
+  #main-nav ul li {
+    display: inline-block;
+  }
+
+  #main-nav {
+    text-align: left;
+  }
 
   .hero-content {
     position: absolute;
