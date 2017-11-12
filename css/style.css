@@ -1,0 +1,262 @@
+/*font-family: 'Playfair Display', serif;
+font-family: 'Lora', serif;
+font-family: 'Abril Fatface', cursive;*/
+
+
+body {
+  font-family: 'Lora', serif;
+  font-size: 14px;
+}
+
+
+/* Header styling */
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3em;
+  font-weight: 700;
+}
+
+h2, h3 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+.second-header {
+  text-align: center;
+  padding: 20px;
+  text-decoration: underline;
+}
+
+/* Link styling */
+
+a {
+  color: #F1F1F1;
+}
+
+/* Typography */
+
+p {
+  font-family: 'Lora', serif;
+  font-size: 1em;
+}
+
+/* navigation styling */
+
+#main-nav {
+    width: 100%;
+    height: 60px;
+    background-color: #476268;
+    line-height: 70px;
+}
+
+#main-nav a{
+    color: white;
+}
+
+#main-nav ul {
+    display: none;
+}
+
+#burger-menu-container  {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    height: 20px;
+    width: 30px;
+}
+
+.burger-menu-piece {
+    width: 100%;
+    height: 6px;
+    background: white;
+    margin: 2px 0;
+}
+
+/* body styling */
+
+.hero-container {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  background-image: url('../img/man.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  position: absolute;
+  top: 30%;
+  left: 38%;
+  width: 200px;
+}
+
+.blurb {
+  font-size: 1em;
+  padding: 30px;
+}
+
+.quote {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  background-image: url('../img/hand.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.quote-overlay {
+  background: rgba(128, 128, 128, 0.4);
+  height: 100%;
+  padding: 50px 90px;
+  text-align: center;
+}
+
+.image-block {
+  background-size: cover;
+  background-position: center;
+  height: 20em;
+  weight: 20em;
+  transition: all 0.5s ease;
+}
+
+.image-block-wherenext {
+  display: none;
+}
+
+.image-block-overlay {
+  padding:20px;
+  color:white;
+  background:rgba(0,0,0,0.4);
+  height:100%;
+}
+
+.image-block-overlay > h3 {
+    padding: 20px;
+    text-align: center;
+}
+
+.image-block-overlay > p {
+    align: center;
+    padding: 0 10px 0 10px;
+}
+
+.image-block:hover{
+    overflow: hidden;
+    background-size: 120%;
+}
+
+/*#image-europe {
+    background-image: url('../img/europe.jpeg');
+}
+
+#image-northamerica {
+    background-image: url('../img/america.jpeg');
+}
+
+#image-asia {
+    background-image: url('../img/asia.jpeg');
+}
+
+#image-africa {
+    background-image: url('../img/africa.jpeg');
+}
+
+#image-oceania {
+    background-image: url('../img/australia.jpeg');
+}*/
+
+/* footer styling */
+
+footer {
+  height: 40px;
+}
+
+footer p {
+  text-align: center;
+  padding: 20px
+}
+
+
+/* stylying for tablets */
+
+@media screen and (min-width: 768px) {
+
+#burger-menu-container {
+  display: none;
+}
+
+#main-nav ul {
+  display: block;
+  width: 500px;
+  position: relative;
+  margin: auto;
+  padding: 0px;
+}
+
+.hero-content {
+  position: absolute;
+  top: 32%;
+  left: 45%;
+  width: 200px;
+}
+
+.quote-overlay {
+  padding: 100px 90px;
+}
+
+.image-block {
+  float: left;
+  width: 33.33%;
+}
+
+.image-block-overlay > h3 {
+    padding: 5px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.image-block-overlay > p {
+    align: center;
+    padding: 5px 10px 0 10px;
+    height: 80%;
+    overflow: auto;
+}
+
+footer {
+  clear: both;
+}
+
+}
+
+
+
+/* styling for desktop */
+
+@media screen and (min-width: 1100px) {
+
+  .hero-content {
+    position: absolute;
+    top: 29%;
+    left: 45%;
+    width: 300px;
+  }
+
+  .quote-overlay {
+    padding: 110px 90px;
+  }
+
+  .image-block-overlay > h3 {
+      padding: 20px;
+      text-align: center;
+  }
+
+  .image-block-overlay > p {
+      align: center;
+      padding: 0 10px 0 10px;
+  }
+}
